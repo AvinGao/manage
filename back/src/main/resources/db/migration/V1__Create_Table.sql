@@ -1,0 +1,11 @@
+DROP DATABASE IF EXISTS manage;
+CREATE DATABASE manage;
+USE manage;
+
+-- 创建表
+CREATE TABLE IF NOT EXISTS sys_userinfo (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    email VARCHAR(255)
+);
